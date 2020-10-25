@@ -1,0 +1,10 @@
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <{foreach item=info from=$block}>
+    <tr>
+      <td align="left" class="souligner"><a href="<{$xoops_url}>/userinfo.php?uid=<{$info.uid}>"><{$info.user}></a></td>
+    </tr>
+     <{foreach item=data from=$info.data}>
+        <tr><td align="left" class="souligner"><{$data.content}> : <{$data.phone_number}></td></tr>
+     <{/foreach}>
+  <{/foreach}>
+</table>
